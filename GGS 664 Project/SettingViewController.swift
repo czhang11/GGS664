@@ -8,88 +8,96 @@
 
 import UIKit
 
-class SettingViewController: UITableViewController {
+class SettingViewController: UITableViewController, UIActionSheetDelegate, UIAlertViewDelegate {
 
+    
+    @IBOutlet weak var radiusSlider: UISlider!
+    @IBOutlet weak var radiusLabel: UILabel!
+    @IBOutlet weak var orderLabel: UILabel!
+    
+    @IBAction func raidusSliderFunc(sender: AnyObject) {
+        
+        if (radiusSlider.value != radiusSlider.maximumValue) {
+            radiusLabel.text = String(Int(radiusSlider.value).description+"km")
+            delegate.range = Int(radiusSlider.value)
+        }
+        else {
+            radiusLabel.text = "Globe"
+            delegate.range = -1
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        radiusSlider.value = Float(delegate.range)
+        radiusLabel.text = String(Int(radiusSlider.value).description+"km")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        
+        return super.numberOfSectionsInTableView(tableView)
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return super.tableView(tableView, numberOfRowsInSection: section)
     }
-
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        return super.tableView(tableView, heightForRowAtIndexPath:indexPath)
     }
-    */
+    
+    
+    // MARK: - Delegates
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (indexPath.section == 1) {
+            if (indexPath.row == 0) {
+                let actionSheet = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Order by Date", "Order by Distance")
+                actionSheet.tag = 1
+                actionSheet.showInView(self.view)
+            }
+        }
+        else if (indexPath.section == 2) {
+            //orderLabel.text = "Order by Distance"
+            let alert = UIAlertView(title: "GGS 664 - Project", message: "This app is developed by Chen Zhang, the full code and project can be downloaded from Github.", delegate: self, cancelButtonTitle: "Done", otherButtonTitles: "Go to Github")
+            alert.tag = 1
+            alert.show()
+        }
     }
-    */
+    
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
+        
+        //---------------------Gender---------------------
+        if (actionSheet.tag == 1){
+            if (buttonIndex == 1){
+                orderLabel.text = "Order by Date"
+            }
+            else if (buttonIndex == 2){
+                //orderLabel.text = "Order by Distance"
+                let alert = UIAlertView(title: "Oops", message: "This function is still under developing", delegate: self, cancelButtonTitle: "Done")
+                alert.show()
+            }
+            
+        }
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
+    
+    
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+        
+        //---------------------Github---------------------
+        if alertView.tag == 1 {
+            var url : NSURL
+            url = NSURL(string: "https://github.com/czhang11/GGS664")!
+            UIApplication.sharedApplication().openURL(url)
+        }
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

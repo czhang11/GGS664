@@ -9,5 +9,9 @@
 #ifndef GGS_664_Project_bridging_header_h
 #define GGS_664_Project_bridging_header_h
 
+#import "AVOSCloud.h"
+#import "AppConstant.h"
+#import "JTSImageInfo.h"
+#import "JTSImageViewController.h"
 
 #endif /* GGS_664_Project_bridging_header_h */

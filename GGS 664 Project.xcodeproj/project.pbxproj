@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850809421CD7F8C400B4F4FA /* CameraFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850809411CD7F8C400B4F4FA /* CameraFuncs.swift */; };
+		850809451CD8882C00B4F4FA /* LocationFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850809441CD8882C00B4F4FA /* LocationFuncs.swift */; };
+		850809471CD8FBD500B4F4FA /* PhotoListPhotoViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850809461CD8FBD500B4F4FA /* PhotoListPhotoViewCellTableViewCell.swift */; };
+		8508094B1CD9329600B4F4FA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8508094A1CD9329600B4F4FA /* SettingViewController.swift */; };
+		850809A91CD95B3C00B4F4FA /* JTSAnimatedGIFUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8508099E1CD95B3C00B4F4FA /* JTSAnimatedGIFUtility.m */; };
+		850809AA1CD95B3C00B4F4FA /* JTSImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 850809A01CD95B3C00B4F4FA /* JTSImageInfo.m */; };
+		850809AB1CD95B3C00B4F4FA /* JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850809A21CD95B3C00B4F4FA /* JTSImageViewController.m */; };
+		850809AC1CD95B3C00B4F4FA /* JTSSimpleImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 850809A41CD95B3C00B4F4FA /* JTSSimpleImageDownloader.m */; };
+		850809AD1CD95B3C00B4F4FA /* UIApplication+JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850809A61CD95B3C00B4F4FA /* UIApplication+JTSImageViewController.m */; };
+		850809AE1CD95B3C00B4F4FA /* UIImage+JTSImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 850809A81CD95B3C00B4F4FA /* UIImage+JTSImageEffects.m */; };
 		859268EC1CC57F5D008ECED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859268EB1CC57F5D008ECED8 /* AppDelegate.swift */; };
-		859268EE1CC57F5D008ECED8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859268ED1CC57F5D008ECED8 /* FirstViewController.swift */; };
-		859268F01CC57F5D008ECED8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859268EF1CC57F5D008ECED8 /* SecondViewController.swift */; };
 		859268F31CC57F5D008ECED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859268F11CC57F5D008ECED8 /* Main.storyboard */; };
 		859268F51CC57F5D008ECED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859268F41CC57F5D008ECED8 /* Assets.xcassets */; };
 		859268F81CC57F5D008ECED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859268F61CC57F5D008ECED8 /* LaunchScreen.storyboard */; };
 		859269031CC57F5D008ECED8 /* GGS_664_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859269021CC57F5D008ECED8 /* GGS_664_ProjectTests.swift */; };
 		8592690E1CC57F5D008ECED8 /* GGS_664_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8592690D1CC57F5D008ECED8 /* GGS_664_ProjectUITests.swift */; };
+		8592691C1CC57F71008ECED8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8592691B1CC57F71008ECED8 /* MapKit.framework */; };
+		8592691E1CC57F8F008ECED8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8592691D1CC57F8F008ECED8 /* CoreLocation.framework */; };
+		859269211CC583A6008ECED8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859269201CC583A6008ECED8 /* SystemConfiguration.framework */; };
+		859269231CC583AE008ECED8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859269221CC583AE008ECED8 /* MobileCoreServices.framework */; };
+		859269251CC583B6008ECED8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859269241CC583B6008ECED8 /* CoreTelephony.framework */; };
+		859269281CC5867B008ECED8 /* PhotoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859269271CC5867B008ECED8 /* PhotoListTableViewController.swift */; };
+		8592692C1CC596C0008ECED8 /* bubble_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8592692B1CC596C0008ECED8 /* bubble_photo.png */; };
+		8592692E1CC597B7008ECED8 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8592692D1CC597B7008ECED8 /* PostTableViewController.swift */; };
+		85EE9F581CDBCEE900DD61DC /* TimeFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EE9F571CDBCEE900DD61DC /* TimeFuncs.swift */; };
+		A622B93D274B6B7AAAF11903 /* libPods-GGS 664 Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BC307CD482FC13008F2B4 /* libPods-GGS 664 Project.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +53,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		616BC307CD482FC13008F2B4 /* libPods-GGS 664 Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GGS 664 Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		850809411CD7F8C400B4F4FA /* CameraFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraFuncs.swift; path = Models/CameraFuncs.swift; sourceTree = "<group>"; };
+		850809431CD812F000B4F4FA /* AppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
+		850809441CD8882C00B4F4FA /* LocationFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationFuncs.swift; path = Models/LocationFuncs.swift; sourceTree = "<group>"; };
+		850809461CD8FBD500B4F4FA /* PhotoListPhotoViewCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListPhotoViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		8508094A1CD9329600B4F4FA /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		8508099D1CD95B3C00B4F4FA /* JTSAnimatedGIFUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSAnimatedGIFUtility.h; sourceTree = "<group>"; };
+		8508099E1CD95B3C00B4F4FA /* JTSAnimatedGIFUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSAnimatedGIFUtility.m; sourceTree = "<group>"; };
+		8508099F1CD95B3C00B4F4FA /* JTSImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSImageInfo.h; sourceTree = "<group>"; };
+		850809A01CD95B3C00B4F4FA /* JTSImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSImageInfo.m; sourceTree = "<group>"; };
+		850809A11CD95B3C00B4F4FA /* JTSImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSImageViewController.h; sourceTree = "<group>"; };
+		850809A21CD95B3C00B4F4FA /* JTSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSImageViewController.m; sourceTree = "<group>"; };
+		850809A31CD95B3C00B4F4FA /* JTSSimpleImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSSimpleImageDownloader.h; sourceTree = "<group>"; };
+		850809A41CD95B3C00B4F4FA /* JTSSimpleImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSSimpleImageDownloader.m; sourceTree = "<group>"; };
+		850809A51CD95B3C00B4F4FA /* UIApplication+JTSImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JTSImageViewController.h"; sourceTree = "<group>"; };
+		850809A61CD95B3C00B4F4FA /* UIApplication+JTSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JTSImageViewController.m"; sourceTree = "<group>"; };
+		850809A71CD95B3C00B4F4FA /* UIImage+JTSImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JTSImageEffects.h"; sourceTree = "<group>"; };
+		850809A81CD95B3C00B4F4FA /* UIImage+JTSImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JTSImageEffects.m"; sourceTree = "<group>"; };
 		859268E81CC57F5D008ECED8 /* GGS 664 Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GGS 664 Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		859268EB1CC57F5D008ECED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		859268ED1CC57F5D008ECED8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		859268EF1CC57F5D008ECED8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		859268F21CC57F5D008ECED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		859268F41CC57F5D008ECED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		859268F71CC57F5D008ECED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +83,18 @@
 		859269091CC57F5D008ECED8 /* GGS 664 ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GGS 664 ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8592690D1CC57F5D008ECED8 /* GGS_664_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGS_664_ProjectUITests.swift; sourceTree = "<group>"; };
 		8592690F1CC57F5D008ECED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8592691B1CC57F71008ECED8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8592691D1CC57F8F008ECED8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		859269201CC583A6008ECED8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		859269221CC583AE008ECED8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		859269241CC583B6008ECED8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		859269261CC5842E008ECED8 /* GGS 664 Project-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GGS 664 Project-bridging-header.h"; sourceTree = "<group>"; };
+		859269271CC5867B008ECED8 /* PhotoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListTableViewController.swift; sourceTree = "<group>"; };
+		8592692B1CC596C0008ECED8 /* bubble_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_photo.png; sourceTree = "<group>"; };
+		8592692D1CC597B7008ECED8 /* PostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		85EE9F571CDBCEE900DD61DC /* TimeFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeFuncs.swift; path = Models/TimeFuncs.swift; sourceTree = "<group>"; };
+		C6BC28383BA8B6110A046768 /* Pods-GGS 664 Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGS 664 Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGS 664 Project/Pods-GGS 664 Project.debug.xcconfig"; sourceTree = "<group>"; };
+		CC4E95F8CEC124D169CFC97F /* Pods-GGS 664 Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGS 664 Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGS 664 Project/Pods-GGS 664 Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +102,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				859269251CC583B6008ECED8 /* CoreTelephony.framework in Frameworks */,
+				859269231CC583AE008ECED8 /* MobileCoreServices.framework in Frameworks */,
+				859269211CC583A6008ECED8 /* SystemConfiguration.framework in Frameworks */,
+				8592691E1CC57F8F008ECED8 /* CoreLocation.framework in Frameworks */,
+				8592691C1CC57F71008ECED8 /* MapKit.framework in Frameworks */,
+				A622B93D274B6B7AAAF11903 /* libPods-GGS 664 Project.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +128,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70FFBFBCA5EC3CF6671951EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6BC28383BA8B6110A046768 /* Pods-GGS 664 Project.debug.xcconfig */,
+				CC4E95F8CEC124D169CFC97F /* Pods-GGS 664 Project.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		850809401CD7F89C00B4F4FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				850809411CD7F8C400B4F4FA /* CameraFuncs.swift */,
+				850809441CD8882C00B4F4FA /* LocationFuncs.swift */,
+				85EE9F571CDBCEE900DD61DC /* TimeFuncs.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8508094C1CD95AC100B4F4FA /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				8508099C1CD95B3C00B4F4FA /* JTSImageViewController */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		8508099C1CD95B3C00B4F4FA /* JTSImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8508099D1CD95B3C00B4F4FA /* JTSAnimatedGIFUtility.h */,
+				8508099E1CD95B3C00B4F4FA /* JTSAnimatedGIFUtility.m */,
+				8508099F1CD95B3C00B4F4FA /* JTSImageInfo.h */,
+				850809A01CD95B3C00B4F4FA /* JTSImageInfo.m */,
+				850809A11CD95B3C00B4F4FA /* JTSImageViewController.h */,
+				850809A21CD95B3C00B4F4FA /* JTSImageViewController.m */,
+				850809A31CD95B3C00B4F4FA /* JTSSimpleImageDownloader.h */,
+				850809A41CD95B3C00B4F4FA /* JTSSimpleImageDownloader.m */,
+				850809A51CD95B3C00B4F4FA /* UIApplication+JTSImageViewController.h */,
+				850809A61CD95B3C00B4F4FA /* UIApplication+JTSImageViewController.m */,
+				850809A71CD95B3C00B4F4FA /* UIImage+JTSImageEffects.h */,
+				850809A81CD95B3C00B4F4FA /* UIImage+JTSImageEffects.m */,
+			);
+			path = JTSImageViewController;
+			sourceTree = "<group>";
+		};
 		859268DF1CC57F5D008ECED8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +181,10 @@
 				859269011CC57F5D008ECED8 /* GGS 664 ProjectTests */,
 				8592690C1CC57F5D008ECED8 /* GGS 664 ProjectUITests */,
 				859268E91CC57F5D008ECED8 /* Products */,
+				8592691F1CC57F96008ECED8 /* Frameworks */,
+				8592692A1CC5968C008ECED8 /* Resources */,
+				70FFBFBCA5EC3CF6671951EE /* Pods */,
+				8508094C1CD95AC100B4F4FA /* Vendors */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +201,15 @@
 		859268EA1CC57F5D008ECED8 /* GGS 664 Project */ = {
 			isa = PBXGroup;
 			children = (
+				850809401CD7F89C00B4F4FA /* Models */,
+				859269291CC586DF008ECED8 /* Classes */,
 				859268EB1CC57F5D008ECED8 /* AppDelegate.swift */,
-				859268ED1CC57F5D008ECED8 /* FirstViewController.swift */,
-				859268EF1CC57F5D008ECED8 /* SecondViewController.swift */,
 				859268F11CC57F5D008ECED8 /* Main.storyboard */,
 				859268F41CC57F5D008ECED8 /* Assets.xcassets */,
 				859268F61CC57F5D008ECED8 /* LaunchScreen.storyboard */,
 				859268F91CC57F5D008ECED8 /* Info.plist */,
+				859269261CC5842E008ECED8 /* GGS 664 Project-bridging-header.h */,
+				850809431CD812F000B4F4FA /* AppConstant.h */,
 			);
 			path = "GGS 664 Project";
 			sourceTree = "<group>";
@@ -128,6 +232,38 @@
 			path = "GGS 664 ProjectUITests";
 			sourceTree = "<group>";
 		};
+		8592691F1CC57F96008ECED8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				859269241CC583B6008ECED8 /* CoreTelephony.framework */,
+				859269221CC583AE008ECED8 /* MobileCoreServices.framework */,
+				859269201CC583A6008ECED8 /* SystemConfiguration.framework */,
+				8592691D1CC57F8F008ECED8 /* CoreLocation.framework */,
+				8592691B1CC57F71008ECED8 /* MapKit.framework */,
+				616BC307CD482FC13008F2B4 /* libPods-GGS 664 Project.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		859269291CC586DF008ECED8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				859269271CC5867B008ECED8 /* PhotoListTableViewController.swift */,
+				8592692D1CC597B7008ECED8 /* PostTableViewController.swift */,
+				850809461CD8FBD500B4F4FA /* PhotoListPhotoViewCellTableViewCell.swift */,
+				8508094A1CD9329600B4F4FA /* SettingViewController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8592692A1CC5968C008ECED8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8592692B1CC596C0008ECED8 /* bubble_photo.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 859269121CC57F5D008ECED8 /* Build configuration list for PBXNativeTarget "GGS 664 Project" */;
 			buildPhases = (
+				61375A69AB74CBB54ED07278 /* Check Pods Manifest.lock */,
 				859268E41CC57F5D008ECED8 /* Sources */,
 				859268E51CC57F5D008ECED8 /* Frameworks */,
 				859268E61CC57F5D008ECED8 /* Resources */,
+				54DBAF0F7B1F8F7C9833BF62 /* Embed Pods Frameworks */,
+				C8387B85AC2B64A78BDD97DE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +335,11 @@
 				TargetAttributes = {
 					859268E71CC57F5D008ECED8 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					859268FD1CC57F5D008ECED8 = {
 						CreatedOnToolsVersion = 7.2;
@@ -232,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8592692C1CC596C0008ECED8 /* bubble_photo.png in Resources */,
 				859268F81CC57F5D008ECED8 /* LaunchScreen.storyboard in Resources */,
 				859268F51CC57F5D008ECED8 /* Assets.xcassets in Resources */,
 				859268F31CC57F5D008ECED8 /* Main.storyboard in Resources */,
@@ -254,14 +399,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54DBAF0F7B1F8F7C9833BF62 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GGS 664 Project/Pods-GGS 664 Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61375A69AB74CBB54ED07278 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8387B85AC2B64A78BDD97DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GGS 664 Project/Pods-GGS 664 Project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		859268E41CC57F5D008ECED8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859268F01CC57F5D008ECED8 /* SecondViewController.swift in Sources */,
+				85EE9F581CDBCEE900DD61DC /* TimeFuncs.swift in Sources */,
+				850809A91CD95B3C00B4F4FA /* JTSAnimatedGIFUtility.m in Sources */,
+				850809AD1CD95B3C00B4F4FA /* UIApplication+JTSImageViewController.m in Sources */,
+				850809421CD7F8C400B4F4FA /* CameraFuncs.swift in Sources */,
+				850809AA1CD95B3C00B4F4FA /* JTSImageInfo.m in Sources */,
+				850809AE1CD95B3C00B4F4FA /* UIImage+JTSImageEffects.m in Sources */,
+				850809451CD8882C00B4F4FA /* LocationFuncs.swift in Sources */,
+				850809471CD8FBD500B4F4FA /* PhotoListPhotoViewCellTableViewCell.swift in Sources */,
 				859268EC1CC57F5D008ECED8 /* AppDelegate.swift in Sources */,
-				859268EE1CC57F5D008ECED8 /* FirstViewController.swift in Sources */,
+				8592692E1CC597B7008ECED8 /* PostTableViewController.swift in Sources */,
+				8508094B1CD9329600B4F4FA /* SettingViewController.swift in Sources */,
+				850809AB1CD95B3C00B4F4FA /* JTSImageViewController.m in Sources */,
+				859269281CC5867B008ECED8 /* PhotoListTableViewController.swift in Sources */,
+				850809AC1CD95B3C00B4F4FA /* JTSSimpleImageDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,23 +605,29 @@
 		};
 		859269131CC57F5D008ECED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6BC28383BA8B6110A046768 /* Pods-GGS 664 Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "GGS 664 Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.czhg.GGS-664-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GGS 664 Project/GGS 664 Project-bridging-header.h";
 			};
 			name = Debug;
 		};
 		859269141CC57F5D008ECED8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC4E95F8CEC124D169CFC97F /* Pods-GGS 664 Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "GGS 664 Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.czhg.GGS-664-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GGS 664 Project/GGS 664 Project-bridging-header.h";
 			};
 			name = Release;
 		};
@@ -488,6 +698,7 @@
 				859269141CC57F5D008ECED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		859269151CC57F5D008ECED8 /* Build configuration list for PBXNativeTarget "GGS 664 ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +707,7 @@
 				859269171CC57F5D008ECED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		859269181CC57F5D008ECED8 /* Build configuration list for PBXNativeTarget "GGS 664 ProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +716,7 @@
 				8592691A1CC57F5D008ECED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

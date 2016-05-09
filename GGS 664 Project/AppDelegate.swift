@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    //Location Info
+    var currentLocation = CLLocation()
+    var locationManager = CLLocationManager()
+    var currentLocationName = NSString()
+    var isLocated = false
+    
+    //Search Filter
+    var range = 200
+    var keyword = "[none]"
+    var orderType = POST_ORDER_TYPE_DATE
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+    
+        AVOSCloud.useAVCloudUS()
+        AVOSCloud.setApplicationId("4QyumzBG7QfwTOfig4ccCXVF-MdYXbMMI", clientKey: "68tNHgHpIiDuq0ARsCLbmEBj")
+        
         return true
     }
 

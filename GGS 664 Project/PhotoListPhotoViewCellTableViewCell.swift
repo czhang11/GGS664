@@ -10,6 +10,22 @@ import UIKit
 
 class PhotoListPhotoViewCellTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var photoButton: UIButton!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var locationLabel: UILabel!
+    var post = AVObject()
+    var selfView = PhotoListTableViewController()
+    
+    @IBAction func photoButtonFunc(sender: AnyObject) {
+        
+        let imageInfo = JTSImageInfo()
+        imageInfo.image = UIImage(data: NSData(contentsOfURL: NSURL(string: post[AV_POSTS_IMAGE].url)!)!)
+                      
+        let imageViewer = JTSImageViewController(imageInfo: imageInfo, mode: JTSImageViewControllerMode.Image, backgroundStyle: JTSImageViewControllerBackgroundOptions.Scaled)
+        imageViewer.showFromViewController(selfView, transition: JTSImageViewControllerTransition.FromOriginalPosition)
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
